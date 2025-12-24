@@ -107,4 +107,32 @@ div[id] {
 nav.scrolled {
   padding: 10px 0;
   background-color: rgba(0,0,0,0.95);
+} /* ===== FINAL SCROLL & HERO FIX (ADD ONLY) ===== */
+section,
+div[id] {
+  scroll-margin-top: 100px !important; /* desktop + mobile base */
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  section,
+  div[id] {
+    scroll-margin-top: 120px !important; /* laptop ke liye thoda upar */
+  }
+  #hero {
+    padding-top: 150px !important; /* desktop hero content adjustment */
+    min-height: calc(100vh - 150px) !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  section,
+  div[id] {
+    scroll-margin-top: 80px !important; /* mobile ke liye proper */
+  }
+  #hero {
+    padding-top: 120px !important; /* mobile hero adjustment */
+    min-height: calc(100vh - 120px) !important;
+  }
 } </style> </head> <body> <!-- Navigation --> <nav> <div class="container"> <div class="logo"> <img src="images/logo.png" alt="Sri Savariya Vision Ads Logo"> <h2 style="color: #FFD700; font-size: 20px;">Sri Savariya Vision Ads</h2> </div> <ul> <li><a href="#hero">Home</a></li> <li><a href="#about">About</a></li> <li><a href="#services">Services</a></li> <li><a href="#why-choose">Why Us</a></li> <li><a href="#clients">Clients</a></li> <li><a href="#vision">Vision</a></li> <li><a href="#founder">Founder</a></li> <li><a href="#contact">Contact</a></li> </ul> </div> </nav> <!-- Hero Section --> <section id="hero"> <div class="container hero-content"> <h1>Premium Digital LED Billboard Advertising</h1> <p>High-visibility outdoor advertising for hospitals, brands & institutions</p> <div class="buttons"> <a href="https://wa.me/message/U3CKLAY5ITNGJ1" class="btn" target="_blank"> Advertise With Us </a> </div> </div> </section> <!-- About Us --> <section id="about"> <div class="container"> <h2>About Us</h2> <p> Sri Savariya Vision Ads provides premium digital LED billboard advertising solutions designed to give brands strong local visibility. We help hospitals, institutions, retailers, and real estate brands connect with their audience through high-impact outdoor advertising that builds trust, recall, and long-term growth. </p> </div> </section> <!-- What We Do (Services) --> <section id="services"> <div class="container"> <h2>What We Do</h2> <ul> <li>Premium Digital LED Billboard Advertising</li> <li>Targeted Local Market Branding</li> <li>High Footfall Location Visibility</li> <li>Scheduled & Rotational Ad Display</li> <li>Professional Brand Presentation Management</li> </ul> </div> </section> <!-- Why Choose Us --> <section id="why-choose"> <div class="container"> <h2>Why Choose Us</h2> <ul> <li>Limited advertisers per screen for maximum brand recall</li> <li>Strategically placed LED screens at high-footfall locations</li> <li>Clear, bright & professionally managed displays</li> <li>Higher visibility and trust compared to online-only ads</li> <li>Personalized support for local brands & institutions</li> </ul> </div> </section> <!-- Who We Work With --> <section id="clients"> <div class="container"> <h2>Who We Work With</h2> <ul> <li>Hospitals & Clinics</li> <li>Real Estate Projects</li> <li>Colleges & Institutions</li> <li>Jewellery & Retail Brands</li> <li>Showrooms & Local Businesses</li> </ul> </div> </section> <!-- Our Vision --> <section id="vision"> <div class="container"> <h2>Our Vision</h2> <p> Our vision is to build a trusted digital outdoor advertising network that helps brands achieve consistent visibility in growing towns and cities. We aim to support local businesses, hospitals, and institutions with premium LED advertising solutions that create long-term brand value and recognition. </p> </div> </section> <!-- Founder Section --> <section id="founder"> <div class="container"> <h2>Meet Our Founder</h2> <div class="founder-info"> <div class="founder-photo"> <img src="images/founder.png" alt="Founder"> </div> <h3>D. Nitesh Rao</h3> <p>Founder</p> <p> D. Nitesh Rao is a vision-driven entrepreneur focused on transforming outdoor advertising through smart digital LED solutions. </p> </div> </div> </section> <!-- Contact / Call to Action --> <section id="contact"> <div class="container"> <h2>Let’s Build Visibility That Grows Your Business</h2> <p>Limited advertising slots available. Contact us today to book your screen.</p> <div class="buttons"> <a href="https://wa.me/917842737469?text=Hi%20I%20want%20to%20advertise%20on%20your%20LED%20screens" class="btn" target="_blank"> WhatsApp </a> <a href="tel:+917842737469" class="btn">Call</a> <a href="mailto:srisavariyavision@gmail.com" class="btn">Email</a> </div> </div> </section> <!-- Optional JavaScript for any interactivity (none required here) --> <script> // No JavaScript needed for this simple site, but placeholder for future enhancements </script> <a href="https://wa.me/message/U3CKLAY5ITNGJ1" class="whatsapp-float" target="_blank"> WhatsApp </a> <script> window.addEventListener("scroll", function () { document.querySelector("nav") .classList.toggle("scrolled", window.scrollY > 50); }); </script> </body> </html> 
